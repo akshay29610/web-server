@@ -4,7 +4,7 @@ const app = express()
 const publicDirectoryPath = path.join(__dirname, '../public')
 app.use(express.static(publicDirectoryPath)) 
  app.get("/weather",(req,res)=>{
-     res.send("weaher data!")
+     res.send("weather data!")
  })
 
  app.listen(3000,()=>{
